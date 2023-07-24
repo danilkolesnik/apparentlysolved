@@ -1,9 +1,12 @@
+import React from 'react';
+import Main from './pages/Main/Main';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
-function App() {
+function App () {
   return (
-    <div className="App">
-
-    </div>
+    <ParallaxProvider scrollAxis='vertical'>
+      <Main />
+    </ParallaxProvider>
   );
 }
 
